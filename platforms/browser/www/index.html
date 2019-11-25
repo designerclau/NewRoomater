@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval' http://cdnjs.cloudflare.com ">
+
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/onsenui.min.js"></script>
+    <title>Roomater</title>
+</head>
+
+<body>
+    <!-- This is a div to show the login options. -->
+    <div id="loginpage" class="page page-active">
+        <div class="login-header">
+            <p></p>
+            <!-- This is a image to show in the login window. -->
+            <img src="img/login-png-1.png" width="30%" height="30%">
+        </div>
+        <div class="painel-login">
+                <!-- This is an input to the user type he/she email. -->
+                <input id ="emaillog" class="form-login" type="text" name="email1" placeholder="Insert your login">
+                <!-- This is an input to the user type he/she password. -->
+                <input id="passw" class="form-login" type="password" name="pass" placeholder="Insert your password">
+                <p> </p>
+                <div>
+                        <!-- This is a button to the user click he/she to login. -->
+                        <button class="btn btn-primary targetpage" dt-page="#userpage" onclick="login()">Login</button>
+                        <!-- This is a button to the user click he/she to sign up. -->
+                        <button class="btn btn-success targetpage" dt-page="#registerpage" onclick="signup()">Sign Up</button>
+                </div>
+                <div></div>
+                 <!-- This is a div to the user see  he/she to login. -->
+                <div id="invaliduser"></div>
+        </div>
+           
+        
+           
+    </div>
+    <!-- This is a div to show the match page. -->
+    <div id="userpage" class="page">
+        <div class="navbar">
+            <!-- This is a div to show the name of the user. -->
+            <span id="idclient">Welcome</span>
+           
+        </div>
+        <div class="conteudo">
+             <!-- This is a list to show the names of the user whose match. -->
+            <ul id="Foo" class="list">
+              <li id ="item1" class="item-list"></li>  
+              <li id ="item2" class="item-list"></li> 
+              <li id ="item3" class="item-list"></li> 
+              <li id ="item4" class="item-list"></li>  
+              <li id ="item5" class="item-list"></li> 
+              <li id ="item6" class="item-list"></li> 
+            </ul>
+        </div>
+        <div>
+            <!-- This is a button to match. -->
+            <button class="btn-footer">Roomater</button>
+       </div>         
+    </div>
+    <!-- This is a div to show the register page. -->
+    <div id="registerpage" class="page">
+            <div class="navbar">
+                <span>User Register</span>
+            </div>
+            <div class="container">
+                    <!-- This is a form to fill up to register. -->
+                    <form>
+                      <div class="form-group">
+                        <label for="usr">Name:</label>
+                         <!-- This is an input text to the user type the name. -->
+                        <input type="text" class="form-control" id="usr" name="username">
+                      </div>
+                      <div class="form-group">
+                            <label for="email">Email:</label>
+                             <!-- This is an input text to the user type the email. -->
+                            <input type="email" class="form-control" id="email" name="emails">
+                      </div>
+                      
+                      <div class="form-group">
+                            <label for="age">Age:</label>
+                             <!-- This is an input text to the user type the age. -->
+                            <input type="text" class="form-control" id="age" name="aage">
+                      </div>
+
+                      <div class="radio">
+                            <label for="smoker">Smoker:</label>
+                             <!-- This is an input radio to the check if is smoker or not. The first option is checked as a default -->
+                            <label><input type="radio" id="smokern" name="optradio" checked value="No">No</label>
+                            <label><input type="radio" id="smokery" name="optradio" value="Yes">Yes</label>
+                      </div>
+                     
+                      <div class="form-group">
+                           <!-- This is a select option to the user select the hobbies. -->
+                            <label for="hobbies">Hobbies (hold shift to select more than one):</label>
+                            <select multiple id="hobbies" name="hobb">
+                                <option id="opt1" value="Reading" selected>Reading</option>
+                                <option id="opt2" value="Watching Movies">Watching Movies</option>
+                                <option id="opt3" value="Fishing">Fishing</option>
+                                <option id="opt4" value="Gardening">Gardening</option>
+                            </select>
+                      </div>
+                      <div class="form-group">
+                            <label for="pwd">Password:</label>
+                             <!-- This is an input text to the user type the password. -->
+                            <input type="password" class="form-control" id="pwd" name="password">
+                      </div>
+
+                    </form>
+                     <!-- This is a div to the user see the feedback. -->
+                    <div id="feedback"></div>
+            </div>
+           
+
+           
+            <div>
+                 <!-- This is a button to save the user. -->
+                <button class="btn-footer targetpage" dt-page="#userpage" onclick= register() >Save</button>
+           </div>         
+        </div>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+     <!-- This is a google maps API. -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBt26IaUNWtrMxxpXLVPZkIPC-sDyb7X0w&callback=initMap">  </script>
+</body>
+
+</html>
