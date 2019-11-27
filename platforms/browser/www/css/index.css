@@ -1,10 +1,13 @@
-
+/* changes the focus of the page  */
 *:focus{
     outline: 0;
 }
+/* hide the options on the page  */
 .hidden{
     display: none;
 }
+
+/* configurations of the class named page  */
 .page{
     position:absolute;
     width: 100%;
@@ -14,33 +17,38 @@
     display: none;
 }
 
+/* configurations of the class named page-active  */
 .page-active{
     display: block;
 }
 
+/* configurations of the object with the id named map  */
 #map {
     height: 400px;
     width: 100%;
 }
 
+/* configurations of the object with the id named loginpage  */
 #loginpage{
     background:url(../img/ice-2025937_1920.jpg);
     background-size: cover;
     
 }
 
+/* configurations of the object with the id named userpage  */
 #userpage{
     background:url(../img/ice-2025937_1920.jpg);
     background-size: cover;
 }
 
-
+/* configurations of the object with the id named registerpage  */
 #registerpage{
     background:url(../img/ice-2025937_1920.jpg);
     background-size: cover;
     
     
 }
+/* configurations of the class named navbar  */
 .navbar{
     background:#34495e;
     width: 100%;
@@ -49,12 +57,15 @@
     text-align: center;
 }
 
+/* configurations of the class named navbar span */
 .navbar span{
     font-size: 17px;
     line-height: 55px;
     font-weight: bold;
    
 }
+
+/* configurations of the class named painel-login */
 .painel-login{
     width: 80%;
     background: rgba(3,1,1, 0);
@@ -64,6 +75,7 @@
     margin-left: 13%;
 }
 
+/* configurations of the class named form-login */
 .form-login{
     width: 90%;
     margin-bottom: 10px;
@@ -73,6 +85,7 @@
     align-self:center;
 }
 
+/* configurations of the class named login-header */
 .login-header{
     margin-top: 20px;
     text-align: center;
@@ -80,11 +93,13 @@
 
 }
 
+/* configurations of the html and body */
 html, body{
     margin:0px;
     padding: 0px;
  }
 
+ /* configurations of the class named btn */
  .btn{
     width: auto;
     padding: 10px 25px;
@@ -93,17 +108,20 @@ html, body{
     text-transform: uppercase;
  }
 
+ /* configurations of the class named .btn-primary */
  .btn-primary{
      background: #9383c5;
      color: white;
      padding-left: 30px;
  }
 
+ /* configurations of the class named btn-success */
  .btn-success{
      background: #309843;
      color: white;
  }
 
+ /* configurations of the class named .btn-footer */
  .btn-footer{
      position:fixed;
      width: 100%;
@@ -116,6 +134,7 @@ html, body{
      text-transform: uppercase;
  }
 
+ /* configurations of the class named list */
  .list{
      list-style-type: none;
      padding: 0;
@@ -123,12 +142,14 @@ html, body{
      color:white;
  }
 
+ /* configurations of the class named .item-list */
  .item-list{
      display: block;
      padding: 15px;
      border-bottom: 2px solid rgb(26, 24, 24);
  }
 
+ /* configurations of the object with the id named Foo  */
 #Foo{
     align="center";
     padding: 15px 15px;
